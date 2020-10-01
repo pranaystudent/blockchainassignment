@@ -39,11 +39,15 @@ contract MyCompany {
       invoices[invoiceseq] = Invoice(orderno, invoiceseq, true);
       
       InvoiceSent(BeachTShirts,invoiceseq, orderno);
+      
+     
+      function getInvoice(uint invoiceno) constant public returns (address BeachTShirts, uint orderno){
+  
+   
+    require(invoices[invoiceno].init);
 
 
-
-    
-
-    
+    return (BeachTShirtsr, _order.number,);
   }
+
   
